@@ -1,0 +1,17 @@
+{
+	"cmd": [
+		"${packages}/Saaqi-Minifier_x86/Node.js/uglifyjs.cmd",
+		"$file", "-o", "${file_base_name}.min.${file_extension}",
+		"--compress", "--mangle"
+	],
+
+	"windows": {
+		"cmd": [
+			"${packages}\\Saaqi-Minifier_x86\\Node.js\\uglifyjs.cmd",
+			"$file", "-o", "${file_base_name}.min.${file_extension}",
+			"--compress", "--mangle"
+		]
+	},
+
+	"selector": "source.js"
+}

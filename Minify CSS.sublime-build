@@ -1,0 +1,15 @@
+{	
+	"cmd": [
+		"${packages}/Saaqi-Minifier_x86/Node.js/uglifycss",
+		"$file", ">", "${file_base_name}.min.${file_extension}"
+	],
+
+	"windows": {
+		"cmd": [
+			"${packages}\\Saaqi-Minifier_x86\\Node.js\\uglifycss.cmd",
+			"$file", ">", "${file_base_name}.min.${file_extension}"
+		]
+	},
+
+	"selector": "source.css"
+}
